@@ -28,7 +28,7 @@ extension UIColor {
     }
 }
 
-class ViewController: UIViewController {
+class AppLoadView: UIViewController {
     @IBOutlet weak var signINButton: UIButton!
     
     override func viewDidLoad() {
