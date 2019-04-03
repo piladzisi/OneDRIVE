@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class BViewController: UIViewController {
+class LoginView: UIViewController {
     
     @IBOutlet weak var myWebView: WKWebView!
     

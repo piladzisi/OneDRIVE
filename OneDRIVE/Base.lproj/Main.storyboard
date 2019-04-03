@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6hj-OE-owG">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Nc-kZ-JzG">
-                                <rect key="frame" x="80" y="440" width="254" height="80"/>
+                                <rect key="frame" x="80" y="484" width="254" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Cmc-uC-dDB"/>
                                 </constraints>
@@ -32,13 +32,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One Drive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DaZ-Ua-tp2">
-                                <rect key="frame" x="20" y="124" width="374" height="36"/>
+                                <rect key="frame" x="20" y="168" width="374" height="36"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <color key="textColor" red="0.24313725490196078" green="0.61960784313725492" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-512.png" translatesAutoresizingMaskIntoConstraints="NO" id="Poa-fx-3wV">
-                                <rect key="frame" x="20" y="200" width="374" height="200"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OneDrive-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Poa-fx-3wV">
+                                <rect key="frame" x="20" y="244" width="374" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="vP1-2l-rBJ"/>
                                 </constraints>
@@ -58,24 +58,25 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="cDn-Ov-iZz"/>
                     <connections>
                         <outlet property="signINButton" destination="8Nc-kZ-JzG" id="2bF-oO-mdD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-65.217391304347828" y="116.51785714285714"/>
+            <point key="canvasLocation" x="478" y="117"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View-->
         <scene sceneID="a3c-jB-9ew">
             <objects>
-                <viewController id="3pP-E2-TYh" customClass="BViewController" customModule="OneDRIVE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3pP-E2-TYh" customClass="LoginView" customModule="OneDRIVE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bA-Gi-BPg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5B-1M-TvZ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -98,10 +99,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pK9-4h-m8r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="644.92753623188412" y="116.51785714285714"/>
+            <point key="canvasLocation" x="1555.072463768116" y="116.51785714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Cyx-CS-E0Z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6hj-OE-owG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SNT-dk-mSl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="TQ8-9F-D3z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nvb-eD-ti2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-829" y="50"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Icon-512.png" width="512" height="512"/>
+        <image name="OneDrive-icon" width="1024" height="1024"/>
     </resources>
 </document>

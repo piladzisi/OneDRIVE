@@ -13,8 +13,7 @@
 		4F2CCE722254E5C900DFCE4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F2CCE712254E5C900DFCE4A /* Assets.xcassets */; };
 		4F2CCE752254E5C900DFCE4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F2CCE732254E5C900DFCE4A /* LaunchScreen.storyboard */; };
 		4F2CCE7E2254EA7800DFCE4A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2CCE7D2254EA7800DFCE4A /* WebKit.framework */; };
-		4F2CCE802254EC1F00DFCE4A /* Icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2CCE7F2254EC1F00DFCE4A /* Icon-512.png */; };
-		4F2CCE842254F1C300DFCE4A /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2CCE832254F1C300DFCE4A /* BViewController.swift */; };
+		4F2CCE842254F1C300DFCE4A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2CCE832254F1C300DFCE4A /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +25,7 @@
 		4F2CCE742254E5C900DFCE4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F2CCE762254E5C900DFCE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F2CCE7D2254EA7800DFCE4A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		4F2CCE7F2254EC1F00DFCE4A /* Icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-512.png"; sourceTree = SOURCE_ROOT; };
-		4F2CCE832254F1C300DFCE4A /* BViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
+		4F2CCE832254F1C300DFCE4A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,14 +60,16 @@
 		4F2CCE692254E5C700DFCE4A /* OneDRIVE */ = {
 			isa = PBXGroup;
 			children = (
+				4F2CCE8C225508C400DFCE4A /* Controller */,
+				4F2CCE8B225508BD00DFCE4A /* View */,
+				4F2CCE8A225508B700DFCE4A /* Model */,
 				4F2CCE6A2254E5C700DFCE4A /* AppDelegate.swift */,
 				4F2CCE6C2254E5C700DFCE4A /* ViewController.swift */,
 				4F2CCE6E2254E5C700DFCE4A /* Main.storyboard */,
-				4F2CCE7F2254EC1F00DFCE4A /* Icon-512.png */,
 				4F2CCE712254E5C900DFCE4A /* Assets.xcassets */,
 				4F2CCE732254E5C900DFCE4A /* LaunchScreen.storyboard */,
 				4F2CCE762254E5C900DFCE4A /* Info.plist */,
-				4F2CCE832254F1C300DFCE4A /* BViewController.swift */,
+				4F2CCE832254F1C300DFCE4A /* LoginView.swift */,
 			);
 			path = OneDRIVE;
 			sourceTree = "<group>";
@@ -80,6 +80,27 @@
 				4F2CCE7D2254EA7800DFCE4A /* WebKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F2CCE8A225508B700DFCE4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4F2CCE8B225508BD00DFCE4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F2CCE8C225508C400DFCE4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +162,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F2CCE752254E5C900DFCE4A /* LaunchScreen.storyboard in Resources */,
-				4F2CCE802254EC1F00DFCE4A /* Icon-512.png in Resources */,
 				4F2CCE722254E5C900DFCE4A /* Assets.xcassets in Resources */,
 				4F2CCE702254E5C700DFCE4A /* Main.storyboard in Resources */,
 			);
@@ -155,7 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F2CCE6D2254E5C700DFCE4A /* ViewController.swift in Sources */,
-				4F2CCE842254F1C300DFCE4A /* BViewController.swift in Sources */,
+				4F2CCE842254F1C300DFCE4A /* LoginView.swift in Sources */,
 				4F2CCE6B2254E5C700DFCE4A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
