@@ -14,6 +14,7 @@
 		4F2CCE752254E5C900DFCE4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F2CCE732254E5C900DFCE4A /* LaunchScreen.storyboard */; };
 		4F2CCE7E2254EA7800DFCE4A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2CCE7D2254EA7800DFCE4A /* WebKit.framework */; };
 		4F2CCE842254F1C300DFCE4A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2CCE832254F1C300DFCE4A /* LoginView.swift */; };
+		4F2CCE90225514B600DFCE4A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2CCE8F225514B600DFCE4A /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4F2CCE762254E5C900DFCE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F2CCE7D2254EA7800DFCE4A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		4F2CCE832254F1C300DFCE4A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4F2CCE8F225514B600DFCE4A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		4F2CCE692254E5C700DFCE4A /* OneDRIVE */ = {
 			isa = PBXGroup;
 			children = (
+				4F2CCE8E2255149C00DFCE4A /* Utilities */,
 				4F2CCE8C225508C400DFCE4A /* Controller */,
 				4F2CCE8B225508BD00DFCE4A /* View */,
 				4F2CCE8A225508B700DFCE4A /* Model */,
@@ -101,6 +104,14 @@
 				4F2CCE832254F1C300DFCE4A /* LoginView.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		4F2CCE8E2255149C00DFCE4A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4F2CCE8F225514B600DFCE4A /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +188,7 @@
 				4F2CCE6D2254E5C700DFCE4A /* AppLoadView.swift in Sources */,
 				4F2CCE842254F1C300DFCE4A /* LoginView.swift in Sources */,
 				4F2CCE6B2254E5C700DFCE4A /* AppDelegate.swift in Sources */,
+				4F2CCE90225514B600DFCE4A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
