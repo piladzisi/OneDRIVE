@@ -25,7 +25,11 @@ class OneDriveApi {
             do {
                 let jsonAny = try JSONSerialization.jsonObject(with: data, options: [])
                 guard let json = jsonAny as? [String: Any] else { return }
-                self.ParseOneDriveManual(json: json)
+                let person = self.ParseOneDriveManual(json: json)
+                
+                print(person.name)
+                print(person.filmUrls)
+                
             } catch {
                 debugPrint(error.localizedDescription)
                 return
@@ -40,8 +44,7 @@ class OneDriveApi {
         let filmUrls = json["films"] as? [String] ?? [String]()
         let vehicleUrls = json["vehicles"] as? [String] ?? [String]()
         
-        let person = Person(name: name, height: height, gender: gender, filmUrls: filmUrls, vehicleUrls: vehicleUrls)
-        return person
+        return Person(name: name, height: height, gender: gender, filmUrls: filmUrls, vehicleUrls: vehicleUrls)
     }
 }
 
