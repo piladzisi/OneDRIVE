@@ -20,7 +20,7 @@ class AppLoadView: UIViewController {
         signINButton.layer.cornerRadius = 12
         
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
         
     }
     

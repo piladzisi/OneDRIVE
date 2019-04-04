@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  Constants.swift
 //  OneDRIVE
 //
 //  Created by anna.sibirtseva on 03/04/2019.
@@ -9,6 +9,7 @@
 import UIKit
 
 extension UIColor {
+    
     convenience init(hexString: String) {
         let hex = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int = UInt32()
@@ -28,21 +29,12 @@ extension UIColor {
     }
 }
 
-class ViewController: UIViewController {
-    @IBOutlet weak var signINButton: UIButton!
-    
-    override func viewDidLoad() {
-        let oneDriveBlue = UIColor(hexString: "#3E9EF8")
-        
-        signINButton.layer.borderWidth = 2
-        signINButton.layer.borderColor = oneDriveBlue.cgColor
-        signINButton.layer.cornerRadius = 12
-        
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-    }
-    
-
-}
-
+let ONE_DRIVE_BLUE = UIColor(hexString: "#3E9EF8")
+let URL_BASE = "https://swapi.co/api/"
+let AUTH_URL = URL_BASE+"people/2"
+//let URL_BASE = "https://login.microsoftonline.com/common/oauth2/v2.0/"
+//let AUTH_URL = URL_BASE+"authorize/"+"?client_id="+kClientID+"&scope="+scope+"&response_type="+response+"&redirect_uri"+redirect
+//let kClientID = "21b55ceb-ff81-450e-a084-99ab778d136f"
+//let scope = "files.read"
+//let response = "code"
+//let redirect = "redirect_uri"
