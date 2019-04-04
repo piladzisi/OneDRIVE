@@ -16,6 +16,7 @@
 		4F2CCE842254F1C300DFCE4A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2CCE832254F1C300DFCE4A /* LoginView.swift */; };
 		4F2CCE90225514B600DFCE4A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2CCE8F225514B600DFCE4A /* Constants.swift */; };
 		4F2CCE942255E70E00DFCE4A /* OneDriveApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2CCE932255E70E00DFCE4A /* OneDriveApi.swift */; };
+		4FC4DB682256314E004F45E0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC4DB672256314E004F45E0 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4F2CCE832254F1C300DFCE4A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4F2CCE8F225514B600DFCE4A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4F2CCE932255E70E00DFCE4A /* OneDriveApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneDriveApi.swift; sourceTree = "<group>"; };
+		4FC4DB672256314E004F45E0 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +66,9 @@
 		4F2CCE692254E5C700DFCE4A /* OneDRIVE */ = {
 			isa = PBXGroup;
 			children = (
+				4F2CCE8A225508B700DFCE4A /* Model */,
 				4F2CCE8C225508C400DFCE4A /* Controller */,
 				4F2CCE8B225508BD00DFCE4A /* View */,
-				4F2CCE8A225508B700DFCE4A /* Model */,
 				4F2CCE6E2254E5C700DFCE4A /* Main.storyboard */,
 				4F2CCE712254E5C900DFCE4A /* Assets.xcassets */,
 				4F2CCE732254E5C900DFCE4A /* LaunchScreen.storyboard */,
@@ -88,6 +90,7 @@
 		4F2CCE8A225508B700DFCE4A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4FC4DB672256314E004F45E0 /* Person.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FC4DB682256314E004F45E0 /* Person.swift in Sources */,
 				4F2CCE942255E70E00DFCE4A /* OneDriveApi.swift in Sources */,
 				4F2CCE6D2254E5C700DFCE4A /* AppLoadView.swift in Sources */,
 				4F2CCE842254F1C300DFCE4A /* LoginView.swift in Sources */,

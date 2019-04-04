@@ -30,6 +30,8 @@ extension UIColor {
 }
 
 let ONE_DRIVE_BLUE = UIColor(hexString: "#3E9EF8")
+
+
 let URL_BASE = "https://swapi.co/api/"
 let AUTH_URL = URL_BASE+"people/2"
 //let URL_BASE = "https://login.microsoftonline.com/common/oauth2/v2.0/"
