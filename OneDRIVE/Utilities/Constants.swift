@@ -32,11 +32,11 @@ extension UIColor {
 let ONE_DRIVE_BLUE = UIColor(hexString: "#3E9EF8")
 
 
-let URL_BASE = "https://swapi.co/api/"
-let AUTH_URL = URL_BASE+"people/2"
-//let URL_BASE = "https://login.microsoftonline.com/common/oauth2/v2.0/"
-//let AUTH_URL = URL_BASE+"authorize/"+"?client_id="+kClientID+"&scope="+scope+"&response_type="+response+"&redirect_uri"+redirect
-//let kClientID = "21b55ceb-ff81-450e-a084-99ab778d136f"
-//let scope = "files.read"
-//let response = "code"
-//let redirect = "redirect_uri"
+//let URL_BASE = "https://swapi.co/api/"
+//let AUTH_URL = URL_BASE+"people/2"
+let URL_BASE = "https://login.microsoftonline.com/common/oauth2/v2.0/authorize"
+let AUTH_URL = URL_BASE+"?client_id="+kClientID+"&scope="+scope+"&response_type="+response+"&redirect_uri="+redirect
+let kClientID = "9bf1a7d9-a92a-4d02-ab58-cc154f5931b4"
+let scope = "files.read"
+let response = "code"
+let redirect = "https://login.live.com/oauth20_desktop.srf"
