@@ -26,7 +26,7 @@ class OneDriveApi {
                 let jsonAny = try JSONSerialization.jsonObject(with: data, options: [])
                 guard let json = jsonAny as? [String: Any] else { return }
                 let person = self.ParseOneDriveManual(json: json)
-//                print(person.name)
+                print(person.name)
                 
             } catch {
                 debugPrint(error.localizedDescription)

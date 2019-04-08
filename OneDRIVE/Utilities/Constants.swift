@@ -40,5 +40,6 @@ let kClientID = "9bf1a7d9-a92a-4d02-ab58-cc154f5931b4"
 let scope = "files.read"
 let response = "code"
 let redirect = "https://login.live.com/oauth20_desktop.srf"
+var code = ""
 //good morning
 
